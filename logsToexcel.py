@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Caminho para o arquivo de entrada e saída
-caminho_do_arquivo_finances = 'paguemenosfinances.csv'
+caminho_do_arquivo_finances = 'query.csv'
 caminho_do_arquivo_saida = 'planilha.xlsx'
 
 
@@ -13,6 +13,7 @@ def logs_para_excel(caminho_do_arquivo_finances, caminho_do_arquivo_saida):
     # Extrair os cabeçalhos
     cabecalhos = linhas[1].strip().split('|')[1:-1]
     cabecalhos = [cabecalho.strip() for cabecalho in cabecalhos]
+    
 
     # Extrair os dados 
     data = []
